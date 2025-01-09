@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-app.use(express.static(path.join(__dirname, 'build', 'static')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', (req, res, next) => {
     res.status(200)
